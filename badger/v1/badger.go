@@ -8,10 +8,10 @@ import (
 	"encoding/binary"
 	"strings"
 
+	"github.com/damhau/nosql/database"
 	"github.com/dgraph-io/badger"
 	"github.com/dgraph-io/badger/options"
 	"github.com/pkg/errors"
-	"github.com/smallstep/nosql/database"
 )
 
 // DB is a wrapper over *badger.DB,

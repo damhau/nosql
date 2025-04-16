@@ -3,6 +3,6 @@
 
 package mysql
 
-import "github.com/smallstep/nosql/database"
+import "github.com/damhau/nosql/database"
 
 type DB = database.NotSupportedDB

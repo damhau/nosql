@@ -7,8 +7,8 @@ import (
 	"bytes"
 	"time"
 
+	"github.com/damhau/nosql/database"
 	"github.com/pkg/errors"
-	"github.com/smallstep/nosql/database"
 	bolt "go.etcd.io/bbolt"
 )
 

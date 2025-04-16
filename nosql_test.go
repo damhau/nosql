@@ -8,8 +8,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/damhau/nosql/database"
 	"github.com/smallstep/assert"
-	"github.com/smallstep/nosql/database"
 )
 
 type testUser struct {

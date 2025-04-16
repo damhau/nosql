@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/damhau/nosql/database"
 	"github.com/go-sql-driver/mysql"
 	"github.com/pkg/errors"
-	"github.com/smallstep/nosql/database"
 )
 
 // DB is a wrapper over *sql.DB,

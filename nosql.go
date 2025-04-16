@@ -3,13 +3,13 @@ package nosql
 import (
 	"strings"
 
+	badgerV1 "github.com/damhau/nosql/badger/v1"
+	badgerV2 "github.com/damhau/nosql/badger/v2"
+	"github.com/damhau/nosql/bolt"
+	"github.com/damhau/nosql/database"
+	"github.com/damhau/nosql/mysql"
+	"github.com/damhau/nosql/postgresql"
 	"github.com/pkg/errors"
-	badgerV1 "github.com/smallstep/nosql/badger/v1"
-	badgerV2 "github.com/smallstep/nosql/badger/v2"
-	"github.com/smallstep/nosql/bolt"
-	"github.com/smallstep/nosql/database"
-	"github.com/smallstep/nosql/mysql"
-	"github.com/smallstep/nosql/postgresql"
 )
 
 // Option is just a wrapper over database.Option.

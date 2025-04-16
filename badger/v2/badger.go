@@ -8,10 +8,10 @@ import (
 	"encoding/binary"
 	"strings"
 
+	"github.com/damhau/nosql/database"
 	"github.com/dgraph-io/badger/v2"
 	"github.com/dgraph-io/badger/v2/options"
 	"github.com/pkg/errors"
-	"github.com/smallstep/nosql/database"
 )
 
 // DB is a wrapper over *badger/v2.DB,
@@ -30,8 +30,8 @@ func (db *DB) Open(dir string, opt ...database.Option) (err error) {
 
 	bo := badger.DefaultOptions(dir)
 	if opts.ReadOnly {
-	        bo = bo.WithReadOnly(true)
-        }
+		bo = bo.WithReadOnly(true)
+	}
 	if opts.ValueDir != "" {
 		bo.ValueDir = opts.ValueDir
 	}
