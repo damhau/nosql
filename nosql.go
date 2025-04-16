@@ -29,6 +29,7 @@ var (
 	WithValueDir = database.WithValueDir
 	// WithDatabase is a wrapper over database.WithDatabase.
 	WithDatabase = database.WithDatabase
+	WithReadOnly = database.WithReadOnly
 	// WithBadgerFileLoadingMode is a wrapper over database.WithBadgerFileLoadingMode.
 	WithBadgerFileLoadingMode = database.WithBadgerFileLoadingMode
 	// IsErrNotFound is a wrapper over database.IsErrNotFound.
