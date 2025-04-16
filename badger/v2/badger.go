@@ -32,6 +32,7 @@ func (db *DB) Open(dir string, opt ...database.Option) (err error) {
 	bo := badger.DefaultOptions(dir)
 	if opts.ReadOnly {
 		bo = bo.WithReadOnly(true)
+		bo.Truncate = false
 	}
 	if opts.ValueDir != "" {
 		bo.ValueDir = opts.ValueDir
