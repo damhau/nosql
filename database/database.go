@@ -31,6 +31,7 @@ type Options struct {
 	Database              string
 	ValueDir              string
 	BadgerFileLoadingMode string
+	ReadOnly              bool
 }
 
 // Option is the modifier type over Options.
