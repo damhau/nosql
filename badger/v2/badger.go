@@ -6,6 +6,7 @@ package badger
 import (
 	"bytes"
 	"encoding/binary"
+	"fmt"
 	"strings"
 
 	"github.com/damhau/nosql/database"
@@ -46,6 +47,7 @@ func (db *DB) Open(dir string, opt ...database.Option) (err error) {
 	default:
 		return badger.ErrInvalidLoadingMode
 	}
+	fmt.Printf("ReadOnly: %v\n", bo.ReadOnly)
 
 	db.db, err = badger.Open(bo)
 	return errors.Wrap(err, "error opening Badger database")
