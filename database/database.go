@@ -45,6 +45,13 @@ func WithValueDir(path string) Option {
 	}
 }
 
+func WithReadOnly(enabled bool) Option {
+	return func(o *Options) error {
+		o.ReadOnly = enabled
+		return nil
+	}
+}
+
 // WithDatabase is a modifier that sets the Database attribute of Options.
 func WithDatabase(db string) Option {
 	return func(o *Options) error {
