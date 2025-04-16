@@ -1,4 +1,4 @@
-module github.com/smallstep/nosql
+module github.com/damhau/nosql
 
 go 1.21
 
